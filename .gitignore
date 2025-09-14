@@ -1,29 +1,26 @@
-# Ignore large dataset files
-data/BIG.csv
-data/phishing_email.csv
-data/CEAS_08.csv
-data/email_phishing_data.csv
-data/train.csv
-data/test.csv
-data/submission.csv
-data/verified_online.csv
-data/Nazario.csv
-data/Nigerian_Fraud.csv
-data/SpamAssasin.csv
-data/Enron.csv
-data/Ling.csv
 
-# Ignore large model files
-models/rf_model.pkl
-models/phish_model.pkl
-models/phishing_model.pkl
-models/log_reg_model.pkl
-models/log_reg_vectorizer.pkl
-models/rf_vectorizer.pkl
-models/tfidf.pkl
-spam_classifier.pkl
-vectorizer.pkl
+# Ignore datasets
+*.csv
 
-# Ignore python cache
+# Ignore model files
+*.pkl
+*.h5
+*.joblib
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
